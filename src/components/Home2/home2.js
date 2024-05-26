@@ -8,6 +8,9 @@ const PowerBIReport = () => {
 
   useEffect(() => {
       const embedReport = async () => {
+
+        if (!reportRef.current) return;
+
           const accesToken = 'TOKEN QUE A KAUANY VAI GERAR';
           const embedUrl = 'URL QUE A KAUANY VAI GERAR';
           const embedConfig = {
@@ -39,16 +42,20 @@ const PowerBIReport = () => {
       };
 
       embedReport();
-  }, []);
+  }, [reportRef]);
 
-  //return <div ref={reportRef} style={{height: '600px'}} />;
+  return null;
 };
 
 const Home2 = () => {
+
+  const reportRef = useRef(null);
+
   return (
     <div className="home2">
       <div className="container">
         <div ref={reportRef} style={{height: '600px'}} />
+        <PowerBIReport reportRef={reportRef} />
       </div>
     </div>
   
