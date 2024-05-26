@@ -1,24 +1,22 @@
-import logo from './assets/logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/footer";
+import Home from "./components/Home/home";
+import Home2 from "./components/Home2/home2";
+import Home3 from "./components/Home3/home3";
+import Navbar from "./components/Navbar/navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Projetinho A3
-        </p>
-        <a
-          className="App-link"
-          href="https://www.youtube.com/watch?v=SnyQhuQvALQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Coisas da vida
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home2" element={<Home2 />} />
+        <Route path="/home3" element={<Home3 />} />
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
