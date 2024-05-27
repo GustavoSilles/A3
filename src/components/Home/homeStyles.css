@@ -6,6 +6,26 @@
   
 }
 
+.scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  width: 100%;
+  background: rgba(21, 19, 19, 0.433);
+  height: 100vh;
+}
+.paradas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+  font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.paragrafo{
+margin-bottom: 3rem;
+}
 /* .home:before {
   content: "";
   position: absolute;
@@ -14,45 +34,51 @@
   height: 100%;
 } */
 
-.blackButton {
-  background-color: black;
-  border: 0;
-}
-
-.blackButton:hover {
-  background-color: rgb(21, 19, 19);
-}
-
-.preto {
-  font-size: 3.5rem;
-  color: #e6e6e6;
-}
-.home .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.home .content {
-  height: 45rem;
+.container {
   display: flex;
-  flex-direction: column;
+  align-items:center;
   justify-content: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  margin-right: 6rem;
-  text-shadow: 1px 1px 1px black;
+}
+.titulo{
+  font-family: "Raleway", sans-serif;
+    color: #000000 !important;
+    font-size : clamp(3rem, 10vw, 5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.home h1 {
-  color: #e6e6e6;
+.button-neon {
+  background-image: linear-gradient(92.88deg, #D5B4BB 9.16%, #dd9ead 43.89%, #CD8495 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ECE3E6;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.home .marrom {
-  color: black;
+.button-neon:hover {
+  box-shadow: #CD8495 0 1px 30px;
+  transition-duration: .1s;
 }
 
-@media screen and (max-width: 940px) {
-  .home .content {
-    margin-left: 1rem;
+@media (min-width: 768px) {
+  .button-neon {
+    padding: 0 2.6rem;
   }
 }
+
+

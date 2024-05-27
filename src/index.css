@@ -4,6 +4,7 @@
   --primary-color: #CD8495;
   --primary-dark: #0f0f0f;
 }
+
 span {
   color: var(--primary-color);
 }

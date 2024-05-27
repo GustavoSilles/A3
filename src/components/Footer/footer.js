@@ -91,12 +91,27 @@ const Footer = () => {
             </p>
             <p>
               <Link className="textoFooter" to="/perfil">
-                kuany
+                Kauany
               </Link>
             </p>
             <p>
               <Link className="textoFooter" to="/perfil">
-                gabris
+                Gabriel
+              </Link>
+            </p>
+            <p>
+              <Link className="textoFooter" to="/perfil">
+                Marcos
+              </Link>
+            </p>
+            <p>
+              <Link className="textoFooter" to="/perfil">
+                Jeferson
+              </Link>
+            </p>
+            <p>
+              <Link className="textoFooter" to="/perfil">
+                Julia
               </Link>
             </p>
           </div>
