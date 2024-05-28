@@ -4,7 +4,16 @@ import "./navbarStyles.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleNav = () => setNav(!nav);
+  
+  
+  const handleLinkClick = () => {
+    setNav(false);
+  };
+
+  
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   return (
     <div name="top">
@@ -15,17 +24,17 @@ const Navbar = () => {
 
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
-            <a className="l1" href="#home">
+            <a className="l1" href="#home" onClick={handleLinkClick}>
               Home
             </a>
           </li>
           <li>
-            <a className="l2" href="#home2">
+            <a className="l2" href="#home2" onClick={handleLinkClick}>
               Home2
             </a>
           </li>
           <li>
-            <a className="l3" href="#home3">
+            <a className="l3" href="#home3" onClick={handleLinkClick}>
               Home3
             </a>
           </li>
