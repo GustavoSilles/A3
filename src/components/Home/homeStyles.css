@@ -6,13 +6,6 @@
   
 }
 
-.scroll {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  width: 100%;
-  background: rgba(21, 19, 19, 0.433);
-  height: 100vh;
-}
 .paradas{
   display: flex;
   align-items: center;
@@ -20,11 +13,14 @@
   flex-direction: column;
   width: 50%;
   text-align: center;
-  margin-top: 100px;
+  color: #000000;
+  margin-top: 7rem;
   font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .paragrafo{
 margin-bottom: 3rem;
+font-size: 1.5rem;
+color: #000000;
 }
 /* .home:before {
   content: "";
@@ -39,6 +35,7 @@ margin-bottom: 3rem;
   align-items:center;
   justify-content: center;
 }
+
 .titulo{
   font-family: "Raleway", sans-serif;
     color: #000000 !important;
@@ -57,7 +54,7 @@ margin-bottom: 3rem;
   color: #ECE3E6;
   cursor: pointer;
   flex-shrink: 0;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 500;
   height: 3rem;
   display: flex;

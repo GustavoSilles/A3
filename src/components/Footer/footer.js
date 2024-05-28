@@ -1,6 +1,4 @@
 import React from "react";
-import { GiHighPunch } from "react-icons/gi";
-import { Link } from "react-router-dom";
 import {
   FiMail,
   FiFacebook,
@@ -10,109 +8,111 @@ import {
 } from "react-icons/fi";
 import "./footerStyles.css";
 
-
 const Footer = () => {
   return (
     <div className="footer">
       <div className="container-footer">
         <div className="top">
-          <div className="logo-footer">
-            <GiHighPunch className="icon" />
-            <h2>VIOLENCIA</h2>
+          <div className="logo-footer">    
+            <h2 className="textfooter">VIOLENCIA</h2>
           </div>
-        
         </div>
         <div className="col-container">
           <div className="col">
             <h3>Navegação</h3>
-
             <p>
-              <Link className="textoFooter" to="/home">
+              <a className="textoFooter" href="#home">
                 Home
-              </Link>
+              </a>
             </p>
             <p>
-              <Link className="textoFooter" to="/feed">
+              <a className="textoFooter" href="#home2">
                 Home2
-              </Link>
+              </a>
             </p>
             <p>
-              <Link className="textoFooter" to="/apimapa">
+              <a className="textoFooter" href="#home3">
                 Home3
-              </Link>
+              </a>
             </p>
-            
           </div>
           <div className="col">
-            <h3>ajuda</h3>
-          
+            <h3>Tecnologias</h3>
             <p>
-              <Link className="textoFooter" to="/perfil">
-                Configurações{" "}
-              </Link>
+              <span className="textoFooter">
+                React JS
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
-                Ajuda
-              </Link>
+              <span className="textoFooter">
+                Netlify
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
-                Termos
-              </Link>
+              <span className="textoFooter">
+                Javascript
+              </span>
+            </p>
+            <p>
+              <span className="textoFooter">
+                Node.JS
+              </span>
+            </p>
+            <p>
+              <span className="textoFooter">
+                Github
+              </span>
             </p>
           </div>
           <div className="col">
             <h3>Informação</h3>
-           
             <p>
-              <Link className="textoFooter" to="/home">
+              <a className="textoFooter" href="#leia-mais">
                 Leia mais
-              </Link>
+              </a>
             </p>
             <p>
-              <Link className="textoFooter" to="/home">
+              <a className="textoFooter" href="#home">
                 Home
-              </Link>
+              </a>
             </p>
             <p>
-              <Link className="textoFooter" to="/home3">
+              <a className="textoFooter" href="#contatar">
                 Contatar
-              </Link>
+              </a>
             </p>
           </div>
           <div className="col">
             <h3>Créditos</h3>
-           
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Gustavo Silles
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Kauany
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Gabriel
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Marcos
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Jeferson
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/perfil">
+              <span className="textoFooter">
                 Julia
-              </Link>
+              </span>
             </p>
           </div>
           <form>

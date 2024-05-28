@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   scroll-snap-align: center;
   position: relative;
-  background: #cd8495
+  background: #cd8495;
 }
 
 .footer .container-footer {
@@ -19,10 +19,17 @@
   display: flex;
   justify-content: space-between;
 }
+.textfooter{
+  margin-left: 120%;
+}
 
 .footer .top .logo-footer {
   display: flex;
   align-items: center;
+  content: "";
+  background: url("../../assets/logo.png") no-repeat center center/cover; 
+  height: 3rem;
+  width: 3rem;
 }
 
 .footer .top .icon {
@@ -45,6 +52,7 @@
 
 .footer h3 {
   margin: 1rem 0 2rem 0;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -63,6 +71,7 @@
   width: 100%;
   outline: none;
   font-size: 1rem;
+  background-color: #ECE3E6;
   border: 1px solid #aaa;
   border-radius: 4px;
   color: #333;
@@ -70,8 +79,7 @@
 
 .footer form input:focus {
   color: #333;
-  outline: var(--primary-color);
-  box-shadow: 0 0 8px 0 var(--primary-dark);
+  box-shadow: 0 0 8px 0 #000000;;
 }
 
 .footer form .mail-icon {
@@ -86,9 +94,9 @@
 .footer form .social-icon {
   margin: 1rem 1rem 1rem 0;
   padding: 0.6rem;
-  background-color: var(--primary-dark);
+  background-color: #000000;
   border-radius: 4px;
-  color: #f8f8f8;
+  color: #ECE3E6;
   font-size: 3rem;
 }
 .textoFooter {
@@ -97,9 +105,6 @@
 }
 
 @media screen and (max-width: 940px) {
-  .footer {
-    height: 100%;
-  }
 
   .footer .col-container {
     grid-template-columns: 3fr 2fr;

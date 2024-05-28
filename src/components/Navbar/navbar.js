@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbarStyles.css";
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   
@@ -19,7 +18,7 @@ const Navbar = () => {
     <div name="top">
       <div className="navbar">
         <div className="logo">
-          <h1 className="textlogo">violencia</h1>
+          <h1 className="textlogo">Violencia</h1>
         </div>
 
         <ul className={nav ? "nav-menu active" : "nav-menu"}>

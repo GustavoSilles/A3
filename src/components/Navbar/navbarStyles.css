@@ -46,12 +46,12 @@
 .navbar li {
   padding: 1rem;
   font-weight: 600;
-  color: #e6e6e6;
+  color: #ECE3E6;
 }
 
 .navbar .icon {
   font-size: 1.4rem;
-  color: #e6e6e6;
+  color: #ECE3E6;
 }
 
 @media screen and (max-width: 940px) {

@@ -7,9 +7,9 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Navbar />} />
+        <Route index element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
