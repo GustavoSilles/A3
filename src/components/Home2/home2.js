@@ -4,7 +4,7 @@ import React from 'react';
 
 const PowerBIReport = () => {
   
-  const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=4c4d7ea9-71ef-4510-ba90-4aafa579b341&autoAuth=true&ctid=1349e306-e60b-4e99-84bb-d290219310d9";
+  const embedUrl = "https://app.powerbi.com/view?r=eyJrIjoiMjgzYzliZGMtZWI2Yi00MWVhLTlmZjEtNWI1MGRhNTE5OTdmIiwidCI6IjEzNDllMzA2LWU2MGItNGU5OS04NGJiLWQyOTAyMTkzMTBkOSJ9";
 
   return (
       <div style = {{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
