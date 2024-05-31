@@ -1,61 +1,32 @@
 import "./home2Styles.css";
-// import * as pbi from 'powerbi-client';
-import React /*{useEffect, useRef}*/ from 'react';
+import React from 'react';
 
 
-// const PowerBIReport = () => {
-//   const reportRef = useRef(null);
+const PowerBIReport = () => {
+  
+  const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=4c4d7ea9-71ef-4510-ba90-4aafa579b341&autoAuth=true&ctid=1349e306-e60b-4e99-84bb-d290219310d9";
 
-//   useEffect(() => {
-//       const embedReport = async () => {
-
-//         if (!reportRef.current) return;
-
-//           const accesToken = 'TOKEN QUE A KAUANY VAI GERAR';
-//           const embedUrl = 'URL QUE A KAUANY VAI GERAR';
-//           const embedConfig = {
-//               type: 'report',
-//               id: 'ID QUE A KAUANY VAI GERAR',
-//               embedUrl: embedUrl,
-//               accesToken: accesToken,
-//               tokenType: pbi.models.TokenType.Embed,
-//               settings: {
-//                   panes: {
-//                       filters: {
-//                           expanded: false,
-//                           visible: false,
-//                       },
-//                   },
-//               },
-//           };
-
-//           const powerbi = new pbi.service.Service(
-//               pbi.factories.hpmFactory, 
-//               pbi.factories.wpmpFactory, 
-//               pbi.factories.routerFactory
-//           );
-
-//           const report = powerbi.embed(
-//               reportRef.current, 
-//               embedConfig
-//           );
-//       };
-
-//       embedReport();
-//   }, [reportRef]);
-
-//   return null;
-// };
+  return (
+      <div style = {{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <h1>Dashboards Informativos:</h1>
+          <iframe
+              title="Power BI Report"
+              width="400%"
+              height="700px"
+              src={embedUrl}
+              frameBorder="5"
+              allowFullScreen={true}
+              style={{ border: 'none' }}
+          ></iframe>
+      </div>
+  );
+};
 
 const Home2 = () => {
-
-  // const reportRef = useRef(null);
-
   return (
     <div className="home2">
       <div className="container">
-        {/* <div ref={reportRef} style={{height: '600px'}} />
-        <PowerBIReport reportRef={reportRef} /> */}
+        <PowerBIReport /> 
       </div>
     </div>
   
