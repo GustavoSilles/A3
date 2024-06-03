@@ -24,17 +24,17 @@ const Navbar = () => {
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
             <a className="l1" href="#home" onClick={handleLinkClick}>
-              Home
+              introdução
             </a>
           </li>
           <li>
             <a className="l2" href="#home2" onClick={handleLinkClick}>
-              Home2
+              Dashboards
             </a>
           </li>
           <li>
             <a className="l3" href="#home3" onClick={handleLinkClick}>
-              Home3
+              Procure ajuda
             </a>
           </li>
         </ul>

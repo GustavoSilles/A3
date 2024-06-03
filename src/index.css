@@ -10,6 +10,7 @@
 }
 html {
   scroll-behavior: smooth;
+  background-color: #ECE3E6;
 }
 
 body {
@@ -44,5 +45,4 @@ a {
   margin: auto;
   height: 100%;
   position: relative;
-  background-color: #ECE3E6;
 }

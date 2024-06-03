@@ -11,15 +11,23 @@ const Home = () => {
       <Navbar/>
       <div id="home" className="home">
         <div className="container">
+          <div className="tudo">
           <div className="paradas">
-            <h1 className="titulo">Projeto A3 tema violencia</h1>
+            <div className="colun">
+            <h1 className="titulo">Bem vindo!</h1>
             <p className="paragrafo">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum.
+            A violência é algo muito sério e recorrente no Brasil que traz males para muitos brasileiros. O objetivo desse site é trazer dados e informações para conscientizar, informar e mobilizar as pessoas para esse problema nacional. Aqui você encontrara dashboards que serão uteis para suas pesquisas sobre o assunto.
             </p>
+            </div>
+            <div className="imgposi">
+            <div className="imghome"></div>
+            </div>
+          </div>  
             <a href="#leiamais">
               <button className="button-neon">Leia Mais</button>
             </a>
-          </div>
+            </div>
+          
         </div>
       </div>
       <div id="home2">

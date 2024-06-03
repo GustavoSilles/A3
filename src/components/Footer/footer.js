@@ -22,17 +22,17 @@ const Footer = () => {
             <h3>Navegação</h3>
             <p>
               <a className="textoFooter" href="#home">
-                Home
+                Introdução
               </a>
             </p>
             <p>
               <a className="textoFooter" href="#home2">
-                Home2
+                Dashboards
               </a>
             </p>
             <p>
               <a className="textoFooter" href="#home3">
-                Home3
+                Procure ajuda
               </a>
             </p>
           </div>

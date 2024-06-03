@@ -7,11 +7,28 @@
 .home2 h2 {
   color: #e6e6e6;
 }
+.painel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.iframe{
+  width: 100%;
+  height: 100vh;
+  border: 0;
+}
+
 
 .home2 p {
   color: #e6e6e6;
   margin: 1rem 0;
 }
+
 
 /* .home2:before {
   content: "";
@@ -31,6 +48,7 @@
   width: 50%;
   text-shadow: 1px 1px 1px black;
 }
+
 
 .home2 .content p {
   margin: 1rem 0;
