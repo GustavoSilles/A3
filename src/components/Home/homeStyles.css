@@ -1,8 +1,6 @@
 .home {
   width: 100%;
   height: 100vh;
-  scroll-snap-align: center;
-  position: relative;
 }
 
 .imghome {
@@ -28,6 +26,13 @@
   align-content: center;
   flex-direction: column;
 }
+.scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  width: 100%;
+  background: rgba(21, 19, 19, 0.433);
+  height: 100vh;
+}
 
 .colun {
   display: flex;
@@ -43,7 +48,7 @@
 
 .paradas {
   display: flex;
-  width: 100%;
+  width: 97%;
   flex-direction: row;
   margin-bottom: 50px;
   align-items: center;
@@ -79,7 +84,7 @@
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #ECE3E6;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   flex-shrink: 0;
   font-size: 1.1rem;
