@@ -13,12 +13,20 @@
   height: 100vh;
 }
 
-.iframe{
-  width: 100%;
-  height: 100vh;
+.iframe {
+  width: 80%;
+  height: 95vh;
   border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171); 
+  border-radius: 8px;
 }
-
+@media screen and (max-width: 940px) {
+.iframe {
+  width: 95%;
+  height: 60vh;
+ 
+}
+}
 
 
 

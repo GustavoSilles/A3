@@ -3,6 +3,7 @@
   height: 80px;
   background-color: #cd8495;
   display: flex;
+  position: fixed;
   z-index: 10;
   border-radius: 0 0 40px 40px;
   justify-content: space-between;
