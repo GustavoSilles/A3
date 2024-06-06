@@ -4,7 +4,7 @@ import React from 'react';
 
 const Home2 = () => {
 
-  const embedUrl = "https://app.powerbi.com/view?r=eyJrIjoiMjgzYzliZGMtZWI2Yi00MWVhLTlmZjEtNWI1MGRhNTE5OTdmIiwidCI6IjEzNDllMzA2LWU2MGItNGU5OS04NGJiLWQyOTAyMTkzMTBkOSJ9";
+  const embedUrl = "https://app.powerbi.com/view?r=eyJrIjoiOWU2MzQ0ZTEtNWI0OS00YmUzLTk3OWUtZWYwZDVlMmE4ODc1IiwidCI6IjEzNDllMzA2LWU2MGItNGU5OS04NGJiLWQyOTAyMTkzMTBkOSJ9";
 
   return (
     <div className="home2">
@@ -23,3 +23,6 @@ const Home2 = () => {
 };
 
 export default Home2;
+
+
+
