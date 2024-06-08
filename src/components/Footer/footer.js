@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container-footer">
         <div className="top">
           <div className="logo-footer">    
-            <h2 className="textfooter">VIOLENCIA</h2>
+            <h2 className="textfooter">VIOLÊNCIA</h2>
           </div>
         </div>
         <div className="col-container">

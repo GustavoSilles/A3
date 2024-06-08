@@ -18,7 +18,7 @@ const Navbar = () => {
     <div name="top">
       <div className="navbar">
         <div className="logo">
-          <h1 className="textlogo">Violencia</h1>
+          <h1 className="textlogo">Violência</h1>
         </div>
 
         <ul className={nav ? "nav-menu active" : "nav-menu"}>

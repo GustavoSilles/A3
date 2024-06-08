@@ -9,7 +9,9 @@ const Home2 = () => {
   return (
     <div className="home2">
       <div className="container">
+      
         <div className="painel">
+        <h1 className="titulodash">Dashboards Informativos</h1>
           <iframe className="iframe"
               title="Power BI Report"
               src={embedUrl}

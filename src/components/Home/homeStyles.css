@@ -49,13 +49,11 @@
   align-items: center;
   text-align: center;
   margin-left: 3%;
-  color: #000000;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .paragrafo {
   font-size: 1.5rem;
-  color: #000000;
+  color: #333;
 }
 
 .container {
@@ -67,7 +65,7 @@
 .titulo {
   font-family: "Raleway", sans-serif;
   margin-bottom: 30px;
-  color: #000000 !important;
+  color: #333;
   font-size: clamp(3rem, 10vw, 5rem);
   font-weight: 700;
   text-transform: uppercase;

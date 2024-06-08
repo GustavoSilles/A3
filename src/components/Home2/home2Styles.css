@@ -2,6 +2,11 @@
   width: 100%;
   height: 100vh;
 }
+.titulodash{
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: #333;
+  margin-bottom: 17px;
+}
 
 .painel{
   display: flex;
@@ -16,6 +21,7 @@
 .iframe {
   width: 80%;
   height: 95vh;
+  margin-bottom: 14px;
   border: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171); 
   border-radius: 8px;
@@ -24,7 +30,7 @@
 .iframe {
   width: 95%;
   height: 60vh;
- 
+  margin: 0;
 }
 }
 
