@@ -13,43 +13,49 @@
 .tituloajuda{
   font-size: clamp(2.5rem, 8vw, 4rem);
   color: #333;
-  margin-bottom: 17px;
+  margin-bottom: 40px;
 }
 .box1{
-  width: 30%;
+  width: 570px;
   display: flex;
+  padding: 20px;
+  margin-bottom: 50px;
   box-shadow: #CD8495 0 1px 15px;
   transition-duration: 0.1s;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-weight: bold;
-  height: 150px;
+  height: auto;
   border: 2px solid #cd8495;
   border-radius: 30px;
 }
+.icon3{
+  font-size: 7rem;
+  color: #CD8495;
+
+}
+
+
 .box2{
+  width: 655px;
   display: flex;
-  align-items: center;
   box-shadow: #CD8495 0 1px 15px;
   transition-duration: 0.1s;
   justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
   font-weight: bold;
-  width: 30%;
-  height: 150px;
+  height: auto;
   border: 2px solid #cd8495;
   border-radius: 30px;
 }
-
-
-
-
 
 
 
 
  @media screen and (max-width: 940px) {
   .box1{
-   width: 95%;
+   width: 76%;
   }
   .box2{
     width: 95%;
