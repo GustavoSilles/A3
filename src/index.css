@@ -10,7 +10,6 @@
 }
 html {
   scroll-behavior: smooth;
-  background-color: #ECE3E6;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ECE3E6;
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(29, 29, 29);
