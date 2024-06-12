@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container-footer">
         <div className="top">
           <div className="logo-footer">    
-            <h2 className="textfooter">VIOLÊNCIA</h2>
+            <h2 className="textfooter">InfoViolência</h2>
           </div>
         </div>
         <div className="col-container">
@@ -91,27 +91,27 @@ const Footer = () => {
             </p>
             <p>
               <span className="textoFooter">
-                Kauany
+                Kauany Pecuch
               </span>
             </p>
             <p>
               <span className="textoFooter">
-                Gabriel
+                Gabriel Meira
               </span>
             </p>
             <p>
               <span className="textoFooter">
-                Marcos
+                Marcos Vinicio
               </span>
             </p>
             <p>
               <span className="textoFooter">
-                Jeferson
+                Djeferson Luiz
               </span>
             </p>
             <p>
               <span className="textoFooter">
-                Julia
+                Júlia Schaden
               </span>
             </p>
           </div>

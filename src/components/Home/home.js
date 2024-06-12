@@ -14,7 +14,7 @@ const Home = () => {
           <div className="tudo">
           <div className="paradas">
             <div className="colun">
-            <h1 className="titulo">Bem vindo!</h1>
+            <h1 className="titulo">Violência em Dados!</h1>
             <p className="paragrafo">
             A violência é um problema muito sério e recorrente no Brasil, que causa muitos males aos brasileiros. O objetivo deste site é fornecer dados e informações para conscientizar, informar e mobilizar as pessoas em relação a esse problema nacional. Aqui você encontrará dashboards úteis para suas pesquisas sobre o assunto.
             </p>

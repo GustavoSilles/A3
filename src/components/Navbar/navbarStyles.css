@@ -59,6 +59,9 @@
     display: block;
     z-index: 1;
   }
+  .textlogo {
+    font-size: 2.3rem;
+}
   
   .navbar {
     position: fixed;
