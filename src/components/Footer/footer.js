@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="col">
             <h3>Navegação</h3>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
                 Introdução
               </RouterLink>
             </p>
@@ -31,9 +31,9 @@ const Footer = () => {
                 setTimeout(() => {
                   const element = document.getElementById("home2");
                   if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
+                    element.scrollIntoView();
                   }
-                }, 100);
+                });
               }}>
                 Dashboards
               </RouterLink>
@@ -43,9 +43,9 @@ const Footer = () => {
                 setTimeout(() => {
                   const element = document.getElementById("home3");
                   if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
+                    element.scrollIntoView();
                   }
-                }, 100);
+                });
               }}>
                 Procure ajuda
               </RouterLink>
@@ -92,19 +92,12 @@ const Footer = () => {
               </RouterLink>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
                 Home
               </RouterLink>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => {
-                setTimeout(() => {
-                  const element = document.getElementById("contatar");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }, 100);
-              }}>
+              <RouterLink className="textoFooter" to="/">
                 Contatar
               </RouterLink>
             </p>
