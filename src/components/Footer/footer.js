@@ -6,6 +6,7 @@ import {
   FiInstagram,
   FiLinkedin,
 } from "react-icons/fi";
+import { Link as RouterLink } from "react-router-dom";
 import "./footerStyles.css";
 
 const Footer = () => {
@@ -21,19 +22,33 @@ const Footer = () => {
           <div className="col">
             <h3>Navegação</h3>
             <p>
-              <a className="textoFooter" href="#home">
+              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 Introdução
-              </a>
+              </RouterLink>
             </p>
             <p>
-              <a className="textoFooter" href="#home2">
+              <RouterLink className="textoFooter" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("home2");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }, 100);
+              }}>
                 Dashboards
-              </a>
+              </RouterLink>
             </p>
             <p>
-              <a className="textoFooter" href="#home3">
+              <RouterLink className="textoFooter" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("home3");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }, 100);
+              }}>
                 Procure ajuda
-              </a>
+              </RouterLink>
             </p>
           </div>
           <div className="col">
@@ -72,19 +87,26 @@ const Footer = () => {
           <div className="col">
             <h3>Informação</h3>
             <p>
-              <a className="textoFooter" href="#leia-mais">
+              <RouterLink className="textoFooter" to="/leiamais">
                 Leia mais
-              </a>
+              </RouterLink>
             </p>
             <p>
-              <a className="textoFooter" href="#home">
+              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 Home
-              </a>
+              </RouterLink>
             </p>
             <p>
-              <a className="textoFooter" href="#contatar">
+              <RouterLink className="textoFooter" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("contatar");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }, 100);
+              }}>
                 Contatar
-              </a>
+              </RouterLink>
             </p>
           </div>
           <div className="col">
@@ -122,7 +144,7 @@ const Footer = () => {
           </div>
           <form>
             <h3>Redes sociais</h3>
-            <input type="email" placeholder="Envie um e_mail" />
+            <input type="email" placeholder="Envie um e-mail" />
             <FiMail className="mail-icon" />
             <div className="social-group">
               <FiInstagram className="social-icon" />

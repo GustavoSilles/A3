@@ -4,6 +4,7 @@ import Home2 from "../Home2/home2";
 import Home3 from "../Home3/home3";
 import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,9 +24,9 @@ const Home = () => {
             <div className="imghome"></div>
             </div>
           </div>  
-            <a href="#leiamais">
+          <Link to="/leiamais">
               <button className="button-neon">Leia Mais</button>
-            </a>
+            </Link>
             </div>
           
         </div>
