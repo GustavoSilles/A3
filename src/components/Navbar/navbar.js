@@ -18,9 +18,9 @@ const Navbar = () => {
       }
     };
 
-    if (location.pathname !== "/") {
+    if (location.pathname === "/") {
       navigate("/");
-      setTimeout(scrollToElement); 
+      setTimeout(scrollToElement,200); 
     } else {
       scrollToElement(); 
     }
