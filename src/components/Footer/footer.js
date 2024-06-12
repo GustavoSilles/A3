@@ -63,6 +63,11 @@ const Footer = () => {
                 Github
               </span>
             </p>
+            <p>
+              <span className="textoFooter">
+                Power BI
+              </span>
+            </p>
           </div>
           <div className="col">
             <h3>Informação</h3>
