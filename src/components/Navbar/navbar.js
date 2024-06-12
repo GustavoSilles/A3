@@ -8,73 +8,51 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleLinkClick = () => {
-    setNav(false);
-  };
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const toggleNav = () => setNav(!nav);
 
   const handleNavClick = (to) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        const element = document.getElementById(to);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-    } else {
+    const scrollToElement = () => {
       const element = document.getElementById(to);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView();
       }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToElement); 
+    } else {
+      scrollToElement(); 
     }
-    handleLinkClick();
+
+    setNav(false); 
   };
 
   return (
     <div name="top">
       <div className="navbar">
-        <div className="logo" onClick={scrollToTop}>
-          <h1 className="textlogo">
-            InfoViolência
-          </h1>
+        <div className="logo" onClick={() => window.scrollTo({ top: 0 })}>
+          <h1 className="textlogo">InfoViolência</h1>
         </div>
-
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
-            <RouterLink className="l1"
-              to="/"
-              onClick={() => handleNavClick("home")}
-            >
+            <RouterLink to="/" onClick={() => handleNavClick("home")}>
               introdução
             </RouterLink>
           </li>
           <li>
-            <RouterLink className="l2"
-              to="/"
-              onClick={() => handleNavClick("home2")}
-            >
+            <RouterLink to="/" onClick={() => handleNavClick("home2")}>
               Dashboards
             </RouterLink>
           </li>
           <li>
-            <RouterLink className="l3"
-              to="/"
-              onClick={() => handleNavClick("home3")}
-            >
+            <RouterLink to="/" onClick={() => handleNavClick("home3")}>
               Procure ajuda
             </RouterLink>
           </li>
         </ul>
-        <div className="hamburger" onClick={handleNav}>
-          {!nav ? <FaBars className="icon" /> : <FaTimes className="icon" />}
+        <div className="hamburger" onClick={toggleNav}>
+          {nav ? <FaTimes className="icon" /> : <FaBars className="icon" />}
         </div>
       </div>
     </div>
