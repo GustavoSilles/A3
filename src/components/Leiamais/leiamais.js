@@ -13,8 +13,8 @@ const LeiaMais = () => {
     <>
       <Navbar />
       <div className="leiamais">
-        <div className="container-mais">
-          <div className="content-mais">
+        <div className="container">
+          <div className="content">
            
           </div>
         </div>

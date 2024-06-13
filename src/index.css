@@ -43,6 +43,6 @@ a {
 
 .container {
   margin: auto;
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
