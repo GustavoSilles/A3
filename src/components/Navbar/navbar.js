@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
-import "./navbarStyles.css";
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
+import './navbarStyles.css';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,14 +18,22 @@ const Navbar = () => {
       }
     };
 
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(scrollToElement); 
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        if (document.querySelector('iframe') && document.querySelector('iframe').contentWindow.document.readyState === 'complete') {
+          scrollToElement();
+        }
+      });
     } else {
-      scrollToElement(); 
+      setTimeout(() => {
+        if (document.querySelector('iframe') && document.querySelector('iframe').contentWindow.document.readyState === 'complete') {
+          scrollToElement();
+        }
+      });
     }
 
-    setNav(false); 
+    setNav(false);
   };
 
   return (
@@ -34,19 +42,19 @@ const Navbar = () => {
         <div className="logo" onClick={() => window.scrollTo({ top: 0 })}>
           <h1 className="textlogo">InfoViolência</h1>
         </div>
-        <ul className={nav ? "nav-menu active" : "nav-menu"}>
+        <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home")}>
+            <RouterLink to="/" onClick={() => handleNavClick('home')}>
               introdução
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home2")}>
+            <RouterLink to="/" onClick={() => handleNavClick('home2')}>
               Dashboards
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home3")}>
+            <RouterLink to="/" onClick={() => handleNavClick('home3')}>
               Procure ajuda
             </RouterLink>
           </li>
