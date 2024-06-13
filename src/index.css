@@ -20,6 +20,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ECE3E6;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ECE3E6;
+    color: #333;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ECE3E6;
+    color: #333;
+  }
+}
 ::-webkit-scrollbar-track {
   background-color: rgb(29, 29, 29);
 }
