@@ -18,20 +18,11 @@ const Navbar = () => {
       }
     };
 
-    const waitForElement = () => {
-      const element = document.getElementById(to);
-      if (element) {
-        scrollToElement();
-      } else {
-        setTimeout(waitForElement, 100);
-      }
-    };
-
     if (location.pathname !== "/") {
       navigate("/");
-      setTimeout(waitForElement, 100); 
+      setTimeout(scrollToElement); 
     } else {
-      waitForElement(); 
+      scrollToElement(); 
     }
 
     setNav(false); 

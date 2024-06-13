@@ -7,6 +7,14 @@
   color: #333;
   margin-bottom: 17px;
 }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  font-size: 24px;
+  color: #333;
+}
 
 .painel{
   display: flex;
