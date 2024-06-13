@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="col">
             <h3>Informação</h3>
             <p>
-              <RouterLink className="textoFooter" to="/leiamais">
+              <RouterLink className="textoFooter" to="leiamais">
                 Leia mais
               </RouterLink>
             </p>

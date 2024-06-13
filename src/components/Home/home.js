@@ -24,7 +24,7 @@ const Home = () => {
             <div className="imghome"></div>
             </div>
           </div>  
-          <Link to="/leiamais">
+          <Link to="leiamais">
               <button className="button-neon">Leia Mais</button>
             </Link>
             </div>
