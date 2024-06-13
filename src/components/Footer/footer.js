@@ -6,7 +6,7 @@ import {
   FiInstagram,
   FiLinkedin,
 } from "react-icons/fi";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./footerStyles.css";
 
 const Footer = () => {
@@ -22,12 +22,12 @@ const Footer = () => {
           <div className="col">
             <h3>Navegação</h3>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
+              <Link className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
                 Introdução
-              </RouterLink>
+              </Link>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => {
+              <Link className="textoFooter" to="/" onClick={() => {
                 setTimeout(() => {
                   const element = document.getElementById("home2");
                   if (element) {
@@ -36,10 +36,10 @@ const Footer = () => {
                 });
               }}>
                 Dashboards
-              </RouterLink>
+              </Link>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => {
+              <Link className="textoFooter" to="/" onClick={() => {
                 setTimeout(() => {
                   const element = document.getElementById("home3");
                   if (element) {
@@ -48,7 +48,7 @@ const Footer = () => {
                 });
               }}>
                 Procure ajuda
-              </RouterLink>
+              </Link>
             </p>
           </div>
           <div className="col">
@@ -87,19 +87,19 @@ const Footer = () => {
           <div className="col">
             <h3>Informação</h3>
             <p>
-              <RouterLink className="textoFooter" to="leiamais">
+              <Link className="textoFooter" to="leiamais">
                 Leia mais
-              </RouterLink>
+              </Link>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
+              <Link className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
                 Home
-              </RouterLink>
+              </Link>
             </p>
             <p>
-              <RouterLink className="textoFooter" to="/">
+              <Link className="textoFooter" to="/">
                 Contatar
-              </RouterLink>
+              </Link>
             </p>
           </div>
           <div className="col">

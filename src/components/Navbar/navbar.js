@@ -1,33 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import "./navbarStyles.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const location = useLocation();
-  const navigate = useNavigate();
+ 
 
   const toggleNav = () => setNav(!nav);
 
-  const handleNavClick = (to) => {
-    const scrollToElement = () => {
-      const element = document.getElementById(to);
-      if (element) {
-        element.scrollIntoView();
-      }
-    };
-
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(scrollToElement); 
-    } else {
-      scrollToElement(); 
-    }
-
-    setNav(false); 
-  };
-
+ 
   return (
     <div name="top">
       <div className="navbar">
@@ -36,19 +18,41 @@ const Navbar = () => {
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
-            <RouterLink className="l1" to="/" onClick={() => handleNavClick("home")}>
+            <Link className="l1" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("home");
+                  if (element) {
+                    element.scrollIntoView();
+                    
+                  }
+                }); toggleNav()
+              }}>
               introdução
-            </RouterLink>
+            </Link>
           </li>
           <li>
-            <RouterLink className="l2" to="/" onClick={() => handleNavClick("home2")}>
+            <Link className="l2" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("home2");
+                  if (element) {
+                    element.scrollIntoView();
+                  }
+                }); toggleNav()
+              }}>
               Dashboards
-            </RouterLink>
+            </Link>
           </li>
           <li>
-            <RouterLink className="l3" to="/" onClick={() => handleNavClick("home3")}>
+            <Link className="l3" to="/" onClick={() => {
+                setTimeout(() => {
+                  const element = document.getElementById("home3");
+                  if (element) {
+                    element.scrollIntoView();
+                  }
+                }); toggleNav()
+              }}>
               Procure ajuda
-            </RouterLink>
+            </Link>
           </li>
         </ul>
         <div className="hamburger" onClick={toggleNav}>
