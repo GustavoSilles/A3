@@ -29,7 +29,7 @@ const Footer = () => {
             <p>
               <Link className="textoFooter" to="/" onClick={() => {
                 setTimeout(() => {
-                  const element = document.getElementById("home2");
+                  const element = document.getElementById("/home2");
                   if (element) {
                     element.scrollIntoView();
                   }
@@ -41,7 +41,7 @@ const Footer = () => {
             <p>
               <Link className="textoFooter" to="/" onClick={() => {
                 setTimeout(() => {
-                  const element = document.getElementById("home3");
+                  const element = document.getElementById("/home3");
                   if (element) {
                     element.scrollIntoView();
                   }
@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="col">
             <h3>Informação</h3>
             <p>
-              <Link className="textoFooter" to="leiamais">
+              <Link className="textoFooter" to="/leiamais">
                 Leia mais
               </Link>
             </p>

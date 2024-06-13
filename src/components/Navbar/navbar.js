@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navbarStyles.css";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           <li>
             <Link className="l1" to="/" onClick={() => {
                 setTimeout(() => {
-                  const element = document.getElementById("home");
+                  const element = document.getElementById("/home");
                   if (element) {
                     element.scrollIntoView();
                     
@@ -33,7 +33,7 @@ const Navbar = () => {
           <li>
             <Link className="l2" to="/" onClick={() => {
                 setTimeout(() => {
-                  const element = document.getElementById("home2");
+                  const element = document.getElementById("/home2");
                   if (element) {
                     element.scrollIntoView();
                   }
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li>
             <Link className="l3" to="/" onClick={() => {
                 setTimeout(() => {
-                  const element = document.getElementById("home3");
+                  const element = document.getElementById("/home3");
                   if (element) {
                     element.scrollIntoView();
                   }
