@@ -1,45 +1,58 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import "./navbarStyles.css";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  
-  
-  const handleLinkClick = () => {
-    setNav(false);
-  };
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  
-  const handleNav = () => {
-    setNav(!nav);
+  const toggleNav = () => setNav(!nav);
+
+  const handleNavClick = (to) => {
+    const scrollToElement = () => {
+      const element = document.getElementById(to);
+      if (element) {
+        element.scrollIntoView();
+      }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToElement); 
+    } else {
+      scrollToElement(); 
+    }
+
+    setNav(false); 
   };
 
   return (
     <div name="top">
       <div className="navbar">
-        <div className="logo">
-          <h1 className="textlogo">Violencia</h1>
+        <div className="logo" onClick={() => window.scrollTo({ top: 0 })}>
+          <h1 className="textlogo">InfoViolência</h1>
         </div>
-
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
-            <a className="l1" href="#home" onClick={handleLinkClick}>
+            <RouterLink className="l1" to="/" onClick={() => handleNavClick("home")}>
               introdução
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a className="l2" href="#home2" onClick={handleLinkClick}>
+            <RouterLink className="l2" to="/" onClick={() => handleNavClick("home2")}>
               Dashboards
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a className="l3" href="#home3" onClick={handleLinkClick}>
+            <RouterLink className="l3" to="/" onClick={() => handleNavClick("home3")}>
               Procure ajuda
-            </a>
+            </RouterLink>
           </li>
         </ul>
-        <div className="hamburger" onClick={handleNav}>
-          {!nav ? <FaBars className="icon" /> : <FaTimes className="icon" />}
+        <div className="hamburger" onClick={toggleNav}>
+          {nav ? <FaTimes className="icon" /> : <FaBars className="icon" />}
         </div>
       </div>
     </div>
