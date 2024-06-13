@@ -20,12 +20,19 @@ const Navbar = () => {
 
     if (location.pathname !== "/") {
       navigate("/");
-      setTimeout(scrollToElement); 
+      setTimeout(() => {
+        const interval = setInterval(() => {
+          if (document.getElementById(to)) {
+            clearInterval(interval);
+            scrollToElement();
+          }
+        }, 100);
+      }, 100);
     } else {
-      scrollToElement(); 
+      scrollToElement();
     }
 
-    setNav(false); 
+    setNav(false);
   };
 
   return (
@@ -36,17 +43,17 @@ const Navbar = () => {
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home")}>
+            <RouterLink className="l1" to="/" onClick={() => handleNavClick("home")}>
               introdução
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home2")}>
+            <RouterLink className="l2" to="/" onClick={() => handleNavClick("home2")}>
               Dashboards
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/" onClick={() => handleNavClick("home3")}>
+            <RouterLink className="l3" to="/" onClick={() => handleNavClick("home3")}>
               Procure ajuda
             </RouterLink>
           </li>

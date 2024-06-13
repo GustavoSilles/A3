@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+:root {
+  --background-color: #ECE3E6;
+  --text-color: #333;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --background-color: #ECE3E6;
+      --text-color: #333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      --background-color: #ECE3E6;
+      --text-color: #333;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -18,23 +39,11 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ECE3E6;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #ECE3E6;
-    color: #333;
-  }
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #ECE3E6;
-    color: #333;
-  }
-}
 ::-webkit-scrollbar-track {
   background-color: rgb(29, 29, 29);
 }

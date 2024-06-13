@@ -51,6 +51,7 @@
 .pe1, .pe2 {
   font-size: clamp(0.875rem, 1.2vw, 1.4rem);
   width: 80%;
+  color: #333;
 }
 .tituluzinho {
   font-size: 2rem;
