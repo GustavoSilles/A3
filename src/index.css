@@ -15,6 +15,12 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--background-color);
+      color: var(--text-color);
+  }
+}
 
 button, a, input, textarea {
   -webkit-tap-highlight-color: transparent;
@@ -26,12 +32,14 @@ button, a, input, textarea {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   margin: 0;
+  color-scheme: light;
   padding: 0;
   text-decoration: none;
 }
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  color-scheme: light;
 }
 
 body {
@@ -42,6 +50,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
   color: var(--text-color);
+  color-scheme: light;
 }
 
 
