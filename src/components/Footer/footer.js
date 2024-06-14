@@ -22,17 +22,17 @@ const Footer = ({ openModal }) => {
           <div className="col">
             <h3>Navegação</h3>
             <p>
-              <Link to="home" smooth={true} duration={500} className="textoFooter">
+              <Link to="home" smooth={true} duration={200} className="textoFooter">
                 Introdução
               </Link>
             </p>
             <p>
-              <Link to="home2" smooth={true} duration={500} className="textoFooter">
+              <Link to="home2" smooth={true} duration={200} className="textoFooter">
                 Dashboards
               </Link>
             </p>
             <p>
-              <Link to="home3" smooth={true} duration={500} className="textoFooter">
+              <Link to="home3" smooth={true} duration={200} className="textoFooter">
                 Procure ajuda
               </Link>
             </p>
@@ -78,12 +78,12 @@ const Footer = ({ openModal }) => {
               </span>
             </p>
             <p>
-              <Link to="home" smooth={true} duration={500} className="textoFooter">
+              <Link to="home" smooth={true} duration={200} className="textoFooter">
                 Home
               </Link>
             </p>
             <p>
-              <Link to="contact" smooth={true} duration={500} className="textoFooter">
+              <Link to="contact" smooth={true} duration={200} className="textoFooter">
                 Contatar
               </Link>
             </p>

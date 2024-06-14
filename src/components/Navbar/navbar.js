@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link
               to="home"
               smooth={true}
-              duration={500}
+              duration={200}
               className="li"
               onClick={handleLinkClick}
             >
@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link
               to="home2"
               smooth={true}
-              duration={500}
+              duration={200}
               className="li"
               onClick={handleLinkClick}
             >
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link
               to="home3"
               smooth={true}
-              duration={500}
+              duration={200}
               className="li"
               onClick={handleLinkClick}
             >
