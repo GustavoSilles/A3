@@ -14,13 +14,13 @@ const Leiamais = ({ closeModal }) => {
       }
     };
 
-    // Adjust the height on initial load and on resize
+   
     window.addEventListener('resize', adjustModalOverlayHeight);
     window.addEventListener('load', adjustModalOverlayHeight);
-    // Call the function immediately to set the initial height
+    
     adjustModalOverlayHeight();
 
-    // Cleanup event listeners on component unmount
+   
     return () => {
       window.removeEventListener('resize', adjustModalOverlayHeight);
       window.removeEventListener('load', adjustModalOverlayHeight);
