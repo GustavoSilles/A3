@@ -102,7 +102,11 @@
 }
 .textoFooter {
   color: #333;
+  cursor: pointer;
   font-size: 19.2px;
+}
+.textoFooter:hover {
+color: #B8AAA7;
 }
 
 @media screen and (max-width: 940px) {

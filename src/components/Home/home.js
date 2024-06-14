@@ -6,7 +6,6 @@ import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
 import Leiamais from "../Leiamais/leiamais";
 
-
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -21,8 +20,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div id="/home" className="home">
-        <div className="container">
+      <div id="home" className="home">
+        <div className="container-home">
           <div className="tudo">
             <div className="paradas">
               <div className="colun">
@@ -34,18 +33,18 @@ const Home = () => {
               <div className="imgposi">
                 <div className="imghome"></div>
               </div>
-            </div>  
+            </div>
             <button className="button-neon" onClick={openModal}>Leia Mais</button>
           </div>
         </div>
       </div>
-      <div id="/home2">
+      <div id="home2">
         <Home2 />
       </div>
-      <div id="/home3">
+      <div id="home3">
         <Home3 />
       </div>
-      <Footer />
+      <Footer openModal={openModal} />
       {isModalOpen && (
         <Leiamais closeModal={closeModal} />
       )}

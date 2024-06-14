@@ -11,8 +11,12 @@
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.322);
 }
 
-.l1:hover, .l2:hover, .l3:hover {
+.li:hover{
   color: #B8AAA7;
+
+}
+.li{
+  cursor: pointer;
 }
 
 

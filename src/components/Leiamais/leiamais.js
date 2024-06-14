@@ -23,7 +23,7 @@ const Leiamais = ({ closeModal }) => {
             <FaRegEye className="icon" />
           </div>
           <h3>Visão</h3>
-          <p>Ser uma referência em informações e dados sobre a violência no Brasil, contribuindo para a redução desse problema social. A violência é um problema muito sério e recorrente no Brasil, que causa muitos males aos brasileiros.</p>
+          <p>Ser uma referência em informações e dados sobre a violência no Brasil, contribuindo para a redução desse problema social. Além de ser o provedor de informações uteis para estudos, leis e politicas publicas para a diminuição da violência e conscientização da população.</p>
         </div>
         <div className="content-section">
           <div className="icon-wrapper">
@@ -52,7 +52,7 @@ const Leiamais = ({ closeModal }) => {
 </div>
 
       </div>
-    </div>
+      </div>
   );
 };
 

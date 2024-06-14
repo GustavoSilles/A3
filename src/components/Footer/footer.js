@@ -6,10 +6,10 @@ import {
   FiInstagram,
   FiLinkedin,
 } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./footerStyles.css";
 
-const Footer = () => {
+const Footer = ({ openModal }) => {
   return (
     <div className="footer">
       <div className="container-footer">
@@ -22,31 +22,17 @@ const Footer = () => {
           <div className="col">
             <h3>Navegação</h3>
             <p>
-              <Link className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
+              <Link to="home" smooth={true} duration={500} className="textoFooter">
                 Introdução
               </Link>
             </p>
             <p>
-              <Link className="textoFooter" to="/" onClick={() => {
-                setTimeout(() => {
-                  const element = document.getElementById("/home2");
-                  if (element) {
-                    element.scrollIntoView();
-                  }
-                });
-              }}>
+              <Link to="home2" smooth={true} duration={500} className="textoFooter">
                 Dashboards
               </Link>
             </p>
             <p>
-              <Link className="textoFooter" to="/" onClick={() => {
-                setTimeout(() => {
-                  const element = document.getElementById("/home3");
-                  if (element) {
-                    element.scrollIntoView();
-                  }
-                });
-              }}>
+              <Link to="home3" smooth={true} duration={500} className="textoFooter">
                 Procure ajuda
               </Link>
             </p>
@@ -87,17 +73,17 @@ const Footer = () => {
           <div className="col">
             <h3>Informação</h3>
             <p>
-              <Link className="textoFooter" to="/leiamais">
+              <span className="textoFooter" onClick={openModal} style={{ cursor: 'pointer' }}>
                 Leia mais
-              </Link>
+              </span>
             </p>
             <p>
-              <Link className="textoFooter" to="/" onClick={() => window.scrollTo({top: 0})}>
+              <Link to="home" smooth={true} duration={500} className="textoFooter">
                 Home
               </Link>
             </p>
             <p>
-              <Link className="textoFooter" to="/">
+              <Link to="contact" smooth={true} duration={500} className="textoFooter">
                 Contatar
               </Link>
             </p>
