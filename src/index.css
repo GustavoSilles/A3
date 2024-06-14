@@ -8,29 +8,35 @@
 
 
 @media (prefers-color-scheme: dark) {
-  :root {
-      --background-color: #ECE3E6;
-      --text-color: #333;
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-      --background-color: #ECE3E6;
-      --text-color: #333;
+  body {
+    background-color: var(--background-color);
+      color: var(--text-color);
   }
+}
+
+button, a, input, textarea {
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
